@@ -1,0 +1,41 @@
+name: Imprime data atual
+
+on:
+  push:
+
+  jobs:
+    Job 1:
+      name: Imprime data atual ubuntu
+      runs-on: ubuntu-latest
+      
+      steps:
+        - name: Imprimi data atual - Ubuntu
+          run: date
+          
+    Job 2:
+      name: Imprime data atual windows
+      runs-on: windows-latest
+           
+      steps:
+        - name: Imprimi data atual - Windows
+          run: date      
+    
+    Job 3:
+      name: Imprime data atual macos
+      runs-on: windows-latest
+           
+      steps:
+        - name: Imprimi data atual - Macos
+          run: date 
+          
+    Job 4:
+      name: Imprime data atual
+      runs-on: ubuntu-latest
+      needs: 
+        - Job 1
+        - Job 2
+        - Job 3
+           
+      steps:
+        - name: Imprimi data atual - Macos
+          run: date       
