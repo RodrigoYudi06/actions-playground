@@ -5,7 +5,7 @@ on:
   
 jobs:
   imprime_data_ubuntu:
-    name: Imprime data atual - Ubuntu
+    name: Imprime data atual - Job 1
     runs-on: ubuntu-latest
     
     steps:
@@ -13,7 +13,7 @@ jobs:
         run: date
   
   imprime_data_windows:
-    name: Imprime data atual - Windows
+    name: Imprime data atual - Job 2
     runs-on: windows-latest
       
     steps:
@@ -21,7 +21,7 @@ jobs:
         run: date   
         
   imprime_data_macos:
-    name: Imprime data atual - Macos
+    name: Imprime data atual - Job 3
     runs-on: macos-latest
         
     steps:
@@ -29,7 +29,7 @@ jobs:
         run: date        
 
   imprime_data_:
-    name: Imprime data atual - Windows
+    name: Imprime data atual - Job 4
     runs-on: windows-latest
     needs:
       - imprime_data_ubuntu
