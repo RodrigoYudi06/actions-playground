@@ -23,9 +23,7 @@ jobs:
   imprime_data_macos:
     name: Imprime data atual - Macos
     runs-on: macos-latest
-    needs:
-      - imprime_data_ubuntu
-    
+        
     steps:
       - name: Imprime data atual
         run: date        
