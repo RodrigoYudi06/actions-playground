@@ -4,8 +4,7 @@ on:
   push:
    
 jobs:
-  
-  checkout_code:
+   checkout_code:
     name: verificacao
     runs-on: ubuntu-latest
    
