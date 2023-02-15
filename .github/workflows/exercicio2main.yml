@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - name: Checkout repositorio
+      - name: checkout repositorio
         uses: actions/checkout@v3.3.0
-  
-      - name: Upload artefato
+      - name: upload artefato
         uses: actions/upload-artifact@v3.1.2
         with:
           name: ${{ vars.NOME }}
