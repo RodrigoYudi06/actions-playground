@@ -6,7 +6,7 @@ on:
 jobs:
   
   checkout_code:
-    name: Faz checkout do name
+    name: verificacao
     runs-on: ubuntu-latest
    
     steps:
