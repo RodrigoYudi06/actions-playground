@@ -2,11 +2,7 @@
 
 on:
   push:
-  
-env:
-  VARIAVEL_1: Rodrigo Yudi
-  VARIAVEL_2: São Paulo
-  
+   
 jobs:
   
   checkout_code:
