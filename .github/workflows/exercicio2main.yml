@@ -1,4 +1,4 @@
- name: workflow
+name: workflow exercio 2
 
 on:
   push:
@@ -6,17 +6,15 @@ on:
 jobs:
   
   checkout_code:
-    Name: Verificação do codigo
+    name: Faz checkout do name
     runs-on ubuntu-latest
-    env:
-      VARIAVEL_JOB: 33
-
+   
   steps:
-  - name: Checkout repositorio
-  uses: actions/checkout@v3.3.0
+    - name: Checkout repositorio
+      uses: actions/checkout@v3.3.0
   
-  -name: Upload a Build Artifact
-  uses: actions/upload-artifact@v3.1.2
-  with:
-    name: ${{ vars.NOME }}
-    path: .
+    -name: Upload artefato
+     uses: actions/upload-artifact@v3.1.2
+     with:
+      name: ${{ vars.NOME }}
+      path: .
