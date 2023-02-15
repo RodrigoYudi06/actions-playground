@@ -7,7 +7,7 @@ jobs:
   
   checkout_code:
     name: Faz checkout do name
-    runs-on ubuntu-latest
+    runs-on: ubuntu-latest
    
   steps:
     - name: Checkout repositorio
